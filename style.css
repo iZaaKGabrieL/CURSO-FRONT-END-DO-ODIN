@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+body{
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+a{
+    color: rgb(255, 208, 0);
+    font-weight: 800;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloco1{
+background-image: url(imgs/foto.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 900px;
+height: 1000px;
+
+}
+
+
+.bloco2{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+width: 1200px;
+height: 1000px;
+text-align: center;
+background-color: rgba(15, 51, 6, 0.589);
+
+}
+
+.bloco2 h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 153, 0);
+}
+
+.logo{
+    margin-top: 40rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.39);
+    flex-direction: row;
+}
+
+.logo img{
+    width: 250px;
+    height: 300px;
+}
+
+h1#titulo{
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    font-size: 2.9rem;
+    
+}
+
+p{
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    text-wrap: 1rem;
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* estilos do formulario*/
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 1000px;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    align-content:center;
+}
+
+.form input{
+    background: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.459);
+    gap: 3rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+
+    
+}
+
+
+.form input:focus{
+    border-radius: 3px;
+    background-color: rgb(255, 238, 201);
+    padding: 3px;
+    color: rgb(214, 118, 7);
+    border: 2px solid rgba(0, 162, 255, 0.774);
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+    
+}
+
+.form input#isenha:invalid{
+    background: rgb(255, 255, 255);
+    border: 1px solid red;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.459);
+    gap: 3rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+
+    
+}
+
+
+button{
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: none;
+    width: 200px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: rgb(255, 145, 0);
+    color: white;
+}
+
+button:hover{
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: none;
+    width: 200px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: rgb(255, 158, 79);
+    color: rgb(255, 255, 255);
+}
+
+.icons{
+  color: rgb(255, 207, 50);
+
+}
+
+fieldset{
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
