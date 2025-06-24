@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+
+:root{
+    --cor-primaria: #1F8EF1;
+  --cor-fundo: #0F172A;
+  --cor-destaque: #3B82F6;
+  --cor-card: #A5D8FF;
+  --cor-texto: #F8FAFC;
+  --cor-secundaria: #475569;
+}
+
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+
+}
+
+body{
+overflow: hidden;
+font-family:  system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+display: grid;
+height: 100vh;
+grid-template-columns: auto 1fr;
+grid-template-rows: auto 1fr;
+grid-template-areas: 
+"barra-lateral cabecalho"
+" barra-lateral  bloco-principal ";
+}
+
+.elementos{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.elementos:hover{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    
+}
+
+i{
+    color: aliceblue;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+i#lupa{
+    color: black;
+    margin: 3px;
+}
+
+p{
+    font-size: 1.2rem;
+    font-display: fallback;
+    color: aliceblue;
+}
+
+.cabecalho{
+    /*NAO APAGA ISSO*/
+    grid-area: cabecalho;
+    /*NAO APAGA ISSO*/
+   display: flex;
+   
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin: 5px;
+   align-items: center;
+}
+
+.cabecalho > div#user{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.cabecalho i > input#buscando{
+    width: 500px;
+    font-size: 1.1rem;
+    text-align: center;
+    height: 50px;
+    margin: 5px;
+    border-radius: 30px;
+    border:1px solid var(--cor-fundo);
+}
+
+.cabecalho i > input#buscando:focus{
+    width: 500px;
+    outline: none;
+    font-size: 1.1rem;
+    text-align: center;
+    height: 50px;
+    margin: 5px;
+    border-radius: 30px;
+    border:1px solid var(--cor-fundo);
+}
+
+.cabecalho h1{
+    font-size: 3.2rem;
+}
+
+.cabecalho menu > button{
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    color: var(--cor-texto);
+    background-color: var(--cor-destaque);
+    border:none;
+
+}
+
+.cabecalho menu > button:hover{
+
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    border:none;
+
+}
+
+
+.barra-lateral{
+    height: 100vh;
+    background-color: var(--cor-primaria);
+    grid-area: barra-lateral;
+    border-right: 5px solid var(--cor-fundo);
+   
+}
+
+.dashboard{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.nav{
+    grid-area: bloco-principal;
+    text-align: center;
+    display: flex;
+    background-color: rgb(219, 245, 255);
+    gap: 10px;
+    overflow: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: normal;
+     box-sizing: border-box;
+    
+
+}
+
+
+ h1#curiosidade{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    text-align: center;
+}
+
+i#logo{
+    color: #0F172A;
+}
+
+.bloco1{
+    display: grid;
+    grid-template-rows: 20px;
+    gap: 15px;
+    margin: auto;
+    grid-template-columns: 500px 500px 1fr;
+    grid-template-rows: 300px 300px ;
+ 
+    
+}
+
+.barraLateralDireita{
+  margin-bottom: 100px;
+  text-align: center;
+  width: 300px;
+
+}
+
+.mini-blocos{
+     
+    text-align: center;
+    width: 500px;
+    gap: 2px;
+    border-radius: 10px;
+    background-color: var(--cor-fundo);
+    gap: 10px;
+    border-left: 5px solid var(--cor-destaque);
+    background-color: var(--cor-fundo);
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.507);
+    
+}
+
+.mini-blocos > i:hover{
+    color: var(--cor-primaria);
+   font-size: 2.3rem;
+}
+
+.mini-blocos2{
+    width: 350px;
+    height: 400px;
+   border-radius: 20px;
+   gap: 50px;
+   background-color:#00b4fc;
+    
+}
+
+img{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.paragrafo{
+    color: var(--cor-card);
+}
+
+.paragrafo2{
+    text-align: left;
+    
+}
+
+.mini-blocos3{
+    display: flex;
+    width: 350px;
+    height: 400px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+   border-radius: 20px;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   gap: 10px;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   background-color: #00b4fc;
+}
+
+.paragrafo3{
+    text-align: left;
+}
+
+h2{
+    text-align: center;
+    align-items: center;
+    color: var(--cor-primaria);
+}
+
+
+.titulo2{
+    text-align: center;
+    align-items: center;
+    color: var(--cor-primaria);
+}
+
+.cabecalho > h3{
+    text-align: center;
+    color: #1F8EF1;
+    display: flex;
+    align-items: center;
+}
