@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+
+:root{
+  --color1:#ffffff;
+  --color2: #8cab78;
+  --color3:#3b9a5c;
+  --color4:#f2f2f2;
+  --color5:#222222;
+  --fonte1: 'Playfair Display', serif;
+  --fonte2: 'Inter', sans-serif;
+
+}
+
+
+/* Container principal do split hero */
+.hero-split {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+ 
+}
+
+/* LADO ESQUERDO — IMAGEM */
+.hero-left {
+  width: 50%;
+  
+  
+}
+
+.hero-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* LADO DIREITO — TEXTO */
+.hero-right {
+  width: 50%;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+   
+}
+
+.hero-right h1 {
+  font-size: 48px;
+  color: #0E3D2B; /* verde italiano premium */
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: var(--fonte1);
+  line-height: 1.2;
+}
+
+.hero-right .subtitle {
+  font-size: 20px;
+  color: #111; /* preto elegante */
+  margin-bottom: 35px;
+  font-family: var(--fonte2);
+  max-width: 420px;
+  line-height: 1.5;
+}
+
+/* BOTÃO PREMIUM */
+.cta-btn {
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 30px;
+  background: #0E3D2B;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.2s;
+  letter-spacing: 1px;
+}
+
+.cta-btn:hover {
+  background: #0c3324;
+  transform: translateY(-2px);
+}
+
+header {
+  background: var(--color1);
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--color2);
+  background: #eef8ef;
+  color: var(--color3);
+  font-family: var(--fonte2);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background:var(--color4);
+}
+
+#content {
+  padding: 40px;
+}
+
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 3rem;
+  color: var(--color3);
+  font-family: var(--fonte1);
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: var(--color5);
+  margin-bottom: 30px;
+  font-family: var(--fonte2);
+}
+
+.hero-image {
+  width: 100%;
+  height: 300px;
+  background: url('https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg?auto=compress&cs=tinysrgb&w=1600')
+    center/cover no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+/* --- MENU ELEGANTE PREMIUM --- */
+
+
+.menu {
+  padding: 20px;
+  background-attachment: fixed; 
+}
+
+.menu h1 {
+  text-align: center;
+  color: #3b6f44;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-family: var(--fonte1);
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+
+
+.card {
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  font-family: var(--fonte2);
+  color: #3b6f44;
+}
+
+.card p {
+   font-family: var(--fonte2);
+  color: #555;
+}
+
+
+/* --- CONTATO ELEGANTE PREMIUM --- */
+
+.contact {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffffee;
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: left;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.contact h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid #1b5e20;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.contact-item .icon {
+  margin-right: 12px;
+  font-size: 1.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
